@@ -48,7 +48,14 @@
 )
 
 (define-test test-nth
-	(assert-equal '() ())	
+	(assert-equal '(mary ann greg judy)
+        (each-nth '(
+            (fred mary sue)
+            (sam ann dave martin)
+            (hank greg joe bill)
+            (jo judy pat jane)
+        ) 1)
+    )(assert-equal '() ())	
 )
 
 (setq *print-errors* T)
