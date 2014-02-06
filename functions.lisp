@@ -40,7 +40,7 @@
 (defun sumAll (&rest parm)
 	(cond
 		((null parm) 0)
-		((atom (car args)) (+ (car args) (similar (cdr one) two)))
+		((atom (car parm)) (+ (car parm) (similar (cdr one) two)))
 		((similar (cdr one) two))
 	)
 )
