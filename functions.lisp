@@ -53,7 +53,7 @@
 (defun similar (one two)
 	(cond
 		((null one) NIL)
-		((memeber (car one) two) (cons (car one) (similar (cdr one) two)))
+		((member (car one) two) (cons (car one) (similar (cdr one) two)))
 		((similar (cdr one) two))
 	)
 )
