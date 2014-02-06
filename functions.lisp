@@ -100,7 +100,7 @@
 (defun nth (X i)
 	(cond
 		((null X) NIL)
-		((cons (return (car X) i) (nth (cdr X) i)))
+		((cons (dump (car X) i) (nth (cdr X) i)))
 	)
 )
 
@@ -122,10 +122,10 @@
 	)
 )
 
-(defun return (X i)
+(defun dump (X i)
 	(cond
 		((null X) NIL)
 		((= i 0) (car X))
-		((return (cdr X)(- i 1)))
+		((dump (cdr X)(- i 1)))
 	)
 )

@@ -48,8 +48,7 @@
 )
 
 (define-test test-nth
-	(assert-equal '() ())
-	
+	(assert-equal '() ())	
 )
 
 (setq *print-errors* T)
