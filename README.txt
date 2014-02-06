@@ -38,3 +38,26 @@ Notes:
 			-	compares the first parameter to the second
 				- 	returns true, if the same
 
+Results:
+	TEST-NTH: 1 assertions passed, 0 failed.
+
+	TEST-MCONS: 1 assertions passed, 0 failed.
+
+	TEST-LASTITEM: 1 assertions passed, 0 failed.
+
+	TEST-ALONE: 1 assertions passed, 0 failed.
+
+	TEST-SIMILAR: 1 assertions passed, 0 failed.
+
+	TEST-SUMALL: 1 assertions passed, 0 failed.
+
+	TEST-DELETEALLAT: 1 assertions passed, 0 failed.
+
+	TEST-DELETEAT: 1 assertions passed, 0 failed.
+
+	Unit Test Summary
+	 | 8 assertions total
+	 | 8 passed
+	 | 0 failed
+	 | 0 execution errors
+	 | 0 missing tests
