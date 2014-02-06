@@ -40,8 +40,8 @@
 (defun sumAll (&rest parm)
 	(cond
 		((null parm) 0)
-		((atom (car parm)) (+ (car parm) (similar (cdr one) two)))
-		((similar (cdr one) two))
+		((atom (car parm)) (+ (car parm) (apply 'sumAll(cdr parm))))
+		((+ (eval (car parm)) (apply 'sumAll (cdr parm))))
 	)
 )
 
@@ -117,7 +117,7 @@
 (defun diff (one two)
 	(cond
 		((null one) NIL)
-		((not (memeber (car one) two)) (cons (car one) (diff (cdr one) two)))
+		((not (member (car one) two)) (cons (car one) (diff (cdr one) two)))
 		((diff (cdr one) two))
 	)
 )

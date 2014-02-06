@@ -40,7 +40,7 @@
 )
 
 (define-test test-lastItem
-	(assert-equal D (lastItem '(A B C D)))
+	(assert-equal "D" (lastItem '("A" "B" "C" "D")))
 )
 
 (define-test test-mcons
@@ -48,13 +48,8 @@
 )
 
 (define-test test-nth
-	(assert-equal '(mary ann greg judy) 
-		(nth '( (fred mary sue)
-		(sam ann dave martin)
-		(hank greg joe bill)
-		(jo judy pat jane)
-		) 1)
-	)
+	(assert-equal '() ())
+	
 )
 
 (setq *print-errors* T)
