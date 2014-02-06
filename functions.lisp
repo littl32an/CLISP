@@ -12,10 +12,11 @@
 ;
 ; Deletes an element at index 'i'
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defun deleteAt (Li
-		((null i) NIL)
-		((eq index 0) (cdr i))
-		((cons (car i) (deleteAt (cdr i)(- index 1))))
+(defun deleteAt (X index)
+	(cond
+		((null X) NIL)
+		((eq index 0) (cdr X))
+		((cons (car X) (deleteAt (cdr X) (- index 1))))
 	)
 )
 
